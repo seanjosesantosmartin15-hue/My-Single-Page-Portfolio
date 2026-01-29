@@ -1,0 +1,218 @@
+ /* CSS Reset (example) */
+ body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+ }
+
+ /* General Styles */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+ }
+
+ .container {
+         width: 80%;
+         margin: auto;
+         overflow: hidden;
+ }
+
+ header {
+    background: #505050;
+    color: white;
+    padding: 1rem 0;
+    border-bottom: #e8491d 0.2rem solid;
+ }
+
+ header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ header h1 {
+    margin: 0;
+ }
+
+ header nav ul {
+    list-style: none;
+    display: flex;
+ }
+
+ header nav ul li {
+    margin-left: 1.2rem;
+ }
+
+ header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+ }
+
+ /* About Section */
+ #About {
+    padding: 2rem 0;
+ }
+
+ #About .container {
+    display: flex;
+    align-items: center;
+ }
+
+ #About .profile-img {
+    width: 40%;
+    padding-right: 2rem;
+ }
+
+ #About .profile-img img {
+    width: 80%;
+    border-radius: 50%;
+ }
+
+ #About .profile-bio {
+    width: 60%;
+ }
+
+ /* Projects Section */
+ #Projects {
+    background-color: #fff;
+    padding: 2rem 0;
+ }
+
+ #Projects h2 {
+    text-align: center;
+    color: #e8491d;
+ }
+
+ #Projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+ }
+
+ #Projects .project {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+ }
+
+ #Projects .project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+ }
+
+ #Projects .project a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e8491d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+ }
+
+ /* Skills Section */
+ #Skills {
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+ }
+
+ #Skills h2 {
+    text-align: center;
+    color: #e8491d;
+ }
+
+ #Skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+ #Skills .skill {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    text-align: center;
+ }
+
+ #Skills .skill i {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+ }
+
+ /* Contact Section */
+ #Contact {
+    background-color: #35424a;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+ }
+
+ #Contact .contact-details p {
+    margin: 0.5rem 0;
+ }
+
+ #Contact .contact-details i {
+    margin-right: 0.5rem;
+ }
+
+ #Contact .contact-details a {
+    color: #fff;
+    text-decoration: none;
+ }
+
+ /* Footer */
+ footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+ }
+
+ /* Media Queries */
+ @media (max-width: 768px) {
+  .container {
+        width: 95%;
+  }
+
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  #About .container {
+    flex-direction: column;
+  }
+
+  #About .profile-img {
+    width: 80%;
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  #About .profile-bio {
+    width: 100%;
+    text-align: center;
+  }
+
+  #Skills .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+ }
